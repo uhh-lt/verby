@@ -4,6 +4,22 @@ For now **only German** is supported!
 We primarily aim to provide a simple way of splitting text into verbal phrases as proposed in [Vauth et al (2021)](https://www.inf.uni-hamburg.de/en/inst/ab/lt/publications/2021-vauth-hatzel-chr.pdf).
 In addition, we also provide a way of splitting the text into sentences.
 
+If you are using this in your academic work please cite our paper:
+```
+@inproceedings{vauthAutomatedEventAnnotation2021,
+  title = {Automated {{Event Annotation}} in {{Literary Texts}}},
+  booktitle = {{{CHR}} 2021: {{Computational Humanities Research Conference}}},
+  author = {Vauth, Michael and Hatzel, Hans Ole and Gius, Evelyn and Biemann, Chris},
+  date = {2021-11-17/2021-11-19},
+  series = {{{CEUR Workshop Proceedings}}},
+  volume = {2989},
+  pages = {333--345},
+  location = {Amsterdam, The Netherlands},
+  url = {http://ceur-ws.org/Vol-2989/short_paper18.pdf},
+  eventtitle = {{{CHR}} 2021: {{Computational Humanities Research Conference}}}
+}
+```
+
 ## Building the Docker Image
 In the project's top-level directory run: `docker build -t verby .`
 This will build a docker image that can be run with: `docker run -p 8000:80 verby` where the `-p` option will ensure that you can access the api on port 8000 from your host.
